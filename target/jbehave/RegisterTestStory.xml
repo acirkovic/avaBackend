@@ -1,0 +1,17 @@
+<story path="RegisterTestStory.story" title="">
+<scenario keyword="Scenario:" title="user is registered with valid credentials">
+<step outcome="successful">Given user creates and remembers his credentials for country <parameter>Switzerland</parameter></step>
+<step outcome="successful">When user is successfully registered with remembered credentials</step>
+<step outcome="successful">Then status code is <parameter>201</parameter></step>
+</scenario>
+<scenario keyword="Scenario:" title="user enters invalid password and receives Bad request response">
+<step outcome="successful">Given user creates and remembers his credentials for country <parameter>Switzerland</parameter></step>
+<step outcome="successful">When user enters invalid password <parameter>123abc</parameter></step>
+<step outcome="successful">Then status code is <parameter>400</parameter></step>
+</scenario>
+<scenario keyword="Scenario:" title="user enters invalid username and receives Bad request response">
+<step outcome="successful">Given user creates and remembers his credentials for country <parameter>Switzerland</parameter></step>
+<step outcome="successful">When user enters invalid username <parameter>Andrija!!@</parameter></step>
+<step outcome="successful">Then status code is <parameter>400</parameter></step>
+</scenario>
+</story>

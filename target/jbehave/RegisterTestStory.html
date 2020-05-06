@@ -1,0 +1,22 @@
+<div class="story">
+<h1></h1>
+<div class="path">RegisterTestStory.story</div>
+<div class="scenario">
+<h2>Scenario: user is registered with valid credentials</h2>
+<div class="step successful">Given user creates and remembers his credentials for country <span class="step parameter">Switzerland</span></div>
+<div class="step successful">When user is successfully registered with remembered credentials</div>
+<div class="step successful">Then status code is <span class="step parameter">201</span></div>
+</div>
+<div class="scenario">
+<h2>Scenario: user enters invalid password and receives Bad request response</h2>
+<div class="step successful">Given user creates and remembers his credentials for country <span class="step parameter">Switzerland</span></div>
+<div class="step successful">When user enters invalid password <span class="step parameter">123abc</span></div>
+<div class="step successful">Then status code is <span class="step parameter">400</span></div>
+</div>
+<div class="scenario">
+<h2>Scenario: user enters invalid username and receives Bad request response</h2>
+<div class="step successful">Given user creates and remembers his credentials for country <span class="step parameter">Switzerland</span></div>
+<div class="step successful">When user enters invalid username <span class="step parameter">Andrija!!@</span></div>
+<div class="step successful">Then status code is <span class="step parameter">400</span></div>
+</div>
+</div>
